@@ -1,3 +1,5 @@
+// Write another program that converts from feet into meters.
+
 package main
 
 import "fmt"

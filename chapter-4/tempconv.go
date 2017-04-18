@@ -1,3 +1,5 @@
+// Write a program that converts from Fahrenheit into Celsius.
+
 package main
 
 import "fmt"

@@ -4,12 +4,12 @@ package main
 
 import "fmt"
 
-func halve(x int) bool {
+func halve(x int) (int, bool) {
 	x = x/2
 	if x % 2 == 0 {
-		return true
+		return x, true
 	} else {
-		return false
+		return x, false
 	}
 }
 
@@ -17,10 +17,10 @@ func main() {
 	fmt.Print("Enter a number: ")
 	var input int
 	fmt.Scanf("%d", &input)
-	result := halve(input)
+	halved, result := halve(input)
 	if result {
-		fmt.Println(input/2, "is even")
+		fmt.Println(halved, "is even")
 	} else {
-		fmt.Println(input/2, "is odd")
+		fmt.Println(halved, "is odd")
 	}
 }
